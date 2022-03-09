@@ -5,10 +5,14 @@ const ToInput = () => {
   const { setToType } = useContext(valuesContext);
 
   return (
-    <select name="type" id="type" onChange={(e) => setToType(e.target.value)}>
-      <option value="arth">Arth</option>
-      <option value="anmol">Anmol</option>
-      <option value="ash">Ash</option>
+    <select
+      name="type"
+      id="type"
+      onChange={(e) => setToType(Number(e.target.value))}
+    >
+      <option value="10">Decimal</option>
+      <option value="8">Octal</option>
+      <option value="16">Hexadecimal</option>
     </select>
   );
 };
