@@ -3,4 +3,4 @@
 - Binary
 - Hexadecimal
 - Decimal
-- Octa
+- Octadecimal
