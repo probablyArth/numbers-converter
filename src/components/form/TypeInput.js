@@ -8,9 +8,9 @@ const TypeInput = ({ setType }) => {
       onChange={(e) => setType(Number(e.target.value))}
       className="text-lg rounded-md shadow-md text-black px-4"
     >
+      <option value="10">Decimal</option>
       <option value="2">Binary</option>
       <option value="8">Octal</option>
-      <option value="10">Decimal</option>
       <option value="16">Hexadecimal</option>
     </select>
   );

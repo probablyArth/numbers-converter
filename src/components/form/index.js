@@ -6,13 +6,14 @@ import { convertBro } from "./utils";
 import { valuesContext } from "../../contexts/ValuesContext";
 
 const Form = () => {
-  const [ans, setAns] = useState("");
+  const [ans, setAns] = useState([]);
 
   const { fromType, toType, value, setToType, setFromType } =
     useContext(valuesContext);
 
   useEffect(() => {
     const answers = convertBro(value, fromType, toType);
+    console.log(answers);
     const ansList = answers.match(/.{1,20}/g);
     console.log(ansList);
     setAns(ansList);
@@ -32,13 +33,13 @@ const Form = () => {
         </div>
         <span
           className="bg-white px-4 text-black text-xl rounded-md block w-full py-2 break-words overflow-hidden"
-          maxlength="20"
+          maxLength="20"
         >
           {ans.map((a) => {
             return (
               <>
                 {a}
-                <br />
+                <br key={a} />
               </>
             );
           })}
