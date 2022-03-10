@@ -30,7 +30,7 @@ const Form = () => {
 
   return (
     <div
-      className={`flex flex-col justify-between text-2xl text-white rounded-md px-4 w-1/5 ${themeStyle.grad} shadow-lg`}
+      className={`flex flex-col justify-between text-2xl text-white rounded-md px-4 ${themeStyle.grad} shadow-lg`}
     >
       <div className="my-3">
         <div className="flex items-center justify-between py-4">
