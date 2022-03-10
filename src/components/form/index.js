@@ -19,7 +19,7 @@ const Form = () => {
   }, [fromType, toType, value]);
 
   return (
-    <div className="flex flex-col justify-between text-2xl bg-gradient-to-r from-purple-600 to-blue px-6 text-white rounded-md">
+    <div className="flex flex-col justify-between text-2xl bg-gradient-to-r from-purple-600 to-blue px-6 text-white rounded-md md:w-1/2">
       <div className="my-3">
         <div className="flex items-center justify-between py-4">
           <span className="mr-4">From</span> <TypeInput setType={setFromType} />
