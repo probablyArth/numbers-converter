@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import ValuesContextProvider from "./contexts/ValuesContext";
+import ThemeContextProvider from "./contexts/ThemeContext";
 
 ReactDOM.render(
-  <ValuesContextProvider>
-    <App />
-  </ValuesContextProvider>,
+  <ThemeContextProvider>
+    <ValuesContextProvider>
+      <App />
+    </ValuesContextProvider>
+  </ThemeContextProvider>,
   document.getElementById("root")
 );
