@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { themeContext } from "../../contexts/ThemeContext";
 
 const Toggle = () => {
