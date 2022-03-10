@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <div
-      className={`my-4 py-4 px-4 rounded-md text-white text-center ${themeStyle.grad}`}
+      className={`my-4 py-4 px-4 rounded-md text-white text-center ${themeStyle.grad} text-2xl`}
     >
       Made with 💖 by probablyArth
       <Socials />

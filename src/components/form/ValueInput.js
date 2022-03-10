@@ -8,7 +8,7 @@ const ValueInput = () => {
       type="text"
       placeholder="Number to convert"
       onChange={(e) => setValue(e.target.value)}
-      className={"text-xl px-4 rounded-md py-2 text-black w-full"}
+      className={"text-xl px-4 rounded-md py-2 text-black w-full giga:text-2xl"}
     />
   );
 };

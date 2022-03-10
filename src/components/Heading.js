@@ -11,7 +11,7 @@ const Heading = ({ children }) => {
   }, [theme]);
   return (
     <h1
-      className={`text-2xl md:text-4xl py-6 duration-300 ease-in text-transparent font-extrabold bg-clip-text ${themeStyle.text}`}
+      className={`text-2xl md:text-4xl py-6 duration-300 ease-in text-transparent font-extrabold bg-clip-text ${themeStyle.text} giga:text-5xl`}
     >
       {children}
     </h1>

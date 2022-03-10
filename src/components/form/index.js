@@ -34,16 +34,18 @@ const Form = () => {
     >
       <div className="my-3">
         <div className="flex items-center justify-between py-4">
-          <span className="mr-4">From</span> <TypeInput setType={setFromType} />
+          <span className="mr-4 giga:text-3xl">From</span>{" "}
+          <TypeInput setType={setFromType} />
         </div>
         <ValueInput />
       </div>
       <div className="my-3 mb-5">
         <div className="flex items-center justify-between py-4">
-          <span className="mr-4">To</span> <TypeInput setType={setToType} />
+          <span className="mr-4 giga:text-3xl">To</span>{" "}
+          <TypeInput setType={setToType} />
         </div>
         <span
-          className="bg-white px-4 text-black text-xl rounded-md block py-2 break-words overflow-hidden from-purple-600 to-blue"
+          className="bg-white px-4 text-black text-xl rounded-md block py-2 break-words overflow-hidden from-purple-600 to-blue giga:text-2xl"
           maxLength="20"
         >
           {ans.map((a) => {
