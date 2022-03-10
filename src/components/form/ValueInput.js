@@ -5,9 +5,10 @@ const ValueInput = () => {
   const { setValue } = useContext(valuesContext);
   return (
     <input
-      type="number"
+      type="text"
       placeholder="Number to convert"
-      onChange={(e) => setValue(Number(e.target.value))}
+      onChange={(e) => setValue(e.target.value)}
+      className={"text-xl px-4 rounded-md py-2 text-black"}
     />
   );
 };

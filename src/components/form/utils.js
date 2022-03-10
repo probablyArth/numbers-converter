@@ -3,6 +3,6 @@
 // };
 
 export const convertBro = (number, from, to) => {
-  const string = number.toString(from);
-  return parseInt(string, to);
+  const num = parseInt(number, from);
+  return num.toString(to);
 };
