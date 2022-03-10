@@ -6,7 +6,7 @@ const TypeInput = ({ setType }) => {
       name="type"
       id="type"
       onChange={(e) => setType(Number(e.target.value))}
-      className="text-lg rounded-md shadow-md text-black px-4"
+      className="text-lg rounded-md shadow-md text-black px-4 py-2"
     >
       <option value="10">Decimal</option>
       <option value="2">Binary</option>

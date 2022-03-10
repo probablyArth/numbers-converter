@@ -12,23 +12,22 @@ const Form = () => {
     useContext(valuesContext);
 
   useEffect(() => {
-    const answers = convertBro(value, fromType, toType);
-    console.log(answers);
-    const ansList = answers.match(/.{1,20}/g);
-    console.log(ansList);
+    const answer = convertBro(value, fromType, toType);
+    if (answer === "NaN") return setAns(["Enter a valid number"]);
+    const ansList = answer.match(/.{1,20}/g);
     setAns(ansList);
   }, [fromType, toType, value]);
 
   return (
-    <div className="flex flex-col h-2/3 justify-between text-2xl bg-blue px-6 text-white rounded-md">
-      <div className="my-4">
-        <div className="flex items-center justify-between py-2">
+    <div className="flex flex-col justify-between text-2xl bg-gradient-to-r from-purple-600 to-blue px-6 text-white rounded-md">
+      <div className="my-3">
+        <div className="flex items-center justify-between py-4">
           <span className="mr-4">From</span> <TypeInput setType={setFromType} />
         </div>
         <ValueInput />
       </div>
-      <div className="my-4">
-        <div className="flex items-center justify-between py-2">
+      <div className="my-3 mb-5">
+        <div className="flex items-center justify-between py-4">
           <span className="mr-4">To</span> <TypeInput setType={setToType} />
         </div>
         <span
