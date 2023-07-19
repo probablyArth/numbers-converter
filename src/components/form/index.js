@@ -35,14 +35,22 @@ const Form = () => {
       <div className="my-3">
         <div className="flex items-center justify-between py-4">
           <span className="mr-4 giga:text-3xl">From</span>{" "}
-          <TypeInput setType={setFromType} />
+          <TypeInput setType={setFromType} currType={fromType}/>
         </div>
         <ValueInput />
       </div>
+      <button className="bg-sky-300 text-black rounded-md p-4 shadow-md border-2 hover:opacity-90" onClick={() => {
+        const newToType = fromType;
+        const newFromType = toType;
+        setToType(newToType);
+        setFromType(newFromType);
+      }}>
+        switch systems
+      </button>
       <div className="my-3 mb-5">
         <div className="flex items-center justify-between py-4">
           <span className="mr-4 giga:text-3xl">To</span>{" "}
-          <TypeInput setType={setToType} />
+          <TypeInput setType={setToType} currType={toType}/>
         </div>
         <span
           className="bg-white px-4 text-black text-xl rounded-md block py-2 break-words overflow-hidden from-purple-600 to-blue giga:text-2xl"
